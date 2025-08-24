@@ -87,10 +87,10 @@ else
 
   " Conservative color support for servers
   if g:is_server
-    " Use 256 colors for better compatibility on servers
-    set t_Co=256
-    " Disable true colors on servers as they often don't support it
-    set notermguicolors
+    " " Use 256 colors for better compatibility on servers
+    " set t_Co=256
+    " " Disable true colors on servers as they often don't support it
+    " set notermguicolors
   else
     " Enable true color support if terminal supports it (local terminals)
     if has('termguicolors') && ($COLORTERM == 'truecolor' || $COLORTERM == '24bit' || $TERM_PROGRAM == 'iTerm.app' || $TERM_PROGRAM == 'Apple_Terminal')
@@ -108,9 +108,10 @@ endif
 
 " Color scheme setup with server-aware fallbacks
 if exists('g:is_server') && g:is_server
-  " Server-friendly color schemes (don't rely on true color)
   try
-    colorscheme desert
+    set termguicolors
+    let ayucolor="dark"
+    colorscheme ayu
   catch
     try
       colorscheme slate
