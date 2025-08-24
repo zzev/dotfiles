@@ -1,6 +1,14 @@
 # Dotfiles
 
-Personal configuration files for tmux and vim.
+Personal dotfiles for vim and tmux with cross-platform compatibility. Features server detection, Dvorak-optimized tmux bindings, Vundle plugin management, and intelligent terminal adaptation for both local development and Ubuntu servers.
+
+  - 🖥️ Cross-platform (macOS + Ubuntu server)
+  - 🎹 Dvorak keyboard optimized tmux navigation
+  - 🎨 Smart color scheme adaptation (true color vs 256-color)
+  - 📦 Automated Vundle plugin management
+  - 🔧 One-command installation with backups
+  - 🖲️ Terminal capability detection (fonts, colors, SSH)
+  - 📜 Session management script with intelligent fallbacks
 
 ## Installation
 
